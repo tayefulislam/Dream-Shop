@@ -1,0 +1,22 @@
+.product{
+    
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 47px ;
+
+}
+
+.product img{
+    border-radius: 15px;
+}
+
+.cart-btn{
+    
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(218, 183, 250);
+    margin-left: 34px;
+}
+
