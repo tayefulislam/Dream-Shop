@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "HP 15s-du1115TU Celeron",
+        "price": 783,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15s-du1115tu/15s-du1115tu-01-228x228.jpg"
+    },
+    {
+        "id": 2,
+        "name": "HP 15s-du1114TU Black",
+        "price": 588,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15s-du1114tu/15s-du1114tu-01-228x228.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Asus Core i3 11th Gen  Laptop",
+        "price": 573,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/expertbook-b1-b1400ceae/expertbook-b1-b1400ceae-01-228x228.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Acer 18.5 Inch Monitor",
+        "price": 201,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/monitor/acer/eb192q/eb192q-01-228x228.jpg"
+    },
+    {
+        "id": 5,
+        "name": "AOC 18.5 HDMI LED Monitor",
+        "price": 140,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/monitor/aoc/e970swhen/e970Swhen-main-228x228.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Lenovo VGA Monitor",
+        "price": 120,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/monitor/lenovo/d19-10/d19-10-01-228x228.jpg"
+    },
+    {
+        "id": 7,
+        "name": "LG 32LK510B 32 HD LED Television",
+        "price": 387,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/television/lg-tv/32lk510b/32lk510b-01-228x228.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Mi 32-Inch Smart Android",
+        "price": 423,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/television/xiaomi/mi-p1/mi-p1-228x228.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Sony Bravia Smart LED TV",
+        "price": 1969,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/Television/sony/KDL%20W600D-228x228.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Netgear Desktop Storage",
+        "price": 747,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/storage/netgear/rn21400/rn21400-228x228.jpg"
+    }
+]
