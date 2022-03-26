@@ -49,6 +49,16 @@ const Shop = () => {
 
     }
 
+    //clear cart
+
+    const clearCart = () => {
+
+        const randomfield = document.getElementById('random-product');
+        randomfield.innerText = '';
+
+        setCarts([])
+    }
+
 
 
     return (
@@ -69,7 +79,7 @@ const Shop = () => {
 
 
 
-                <Cart cart={carts}></Cart>
+                <Cart key={carts.id} cart={carts} clearCart={clearCart}></Cart>
 
 
 
