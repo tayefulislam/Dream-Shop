@@ -33,8 +33,17 @@ const Shop = () => {
 
         if (!checkCart) {
 
-            const newCart = [...carts, product];
-            setCarts(newCart)
+            if (carts.length < 4) {
+                const newCart = [...carts, product];
+                setCarts(newCart)
+            }
+
+
+            else {
+                alert('Opps! You Can Add More then 4 In Shopping Cart')
+            }
+
+
 
         }
 
@@ -57,6 +66,8 @@ const Shop = () => {
             </div>
 
             <div className='cart-container'>
+
+
 
                 <Cart cart={carts}></Cart>
 
