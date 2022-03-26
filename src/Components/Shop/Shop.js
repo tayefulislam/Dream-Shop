@@ -125,26 +125,29 @@ const Shop = () => {
             <div className='cart-container'>
 
 
-                < h1>Choose Product</h1>
+                <div className='cart'>
+
+                    <h2>Cart List</h2>
 
 
-                <div>
-                    {
-                        carts.map(cart => <Cart key={cart.id}
-                            cart={cart}
-                            deleteitem={deleteitem}
-                        ></Cart>)
-                    }
+                    <div>
+                        {
+                            carts.map(cart => <Cart key={cart.id}
+                                cart={cart}
+                                deleteitem={deleteitem}
+                            ></Cart>)
+                        }
+                    </div>
+
+                    <div className='random-product'>
+                        <img src={picture} alt="" />
+                        <h3> {name}</h3>
+                    </div>
+
+                    <button id='surprise-btn' onClick={randomProduct}>Surprise Product</button>
+                    <button id='clear-btn' onClick={clearCart}>Clear Cart</button>
+
                 </div>
-
-                <div className='random-product'>
-                    <img src={picture} alt="" />
-                    <p> {name}</p>
-                </div>
-
-                <button onClick={randomProduct}>Surprise Product</button>
-                <button onClick={clearCart}>Clear Shpping Cart</button>
-
             </div>
 
 

@@ -6,7 +6,7 @@ const Header = () => {
         <div>
 
             <h1 id='title'>Dream Shop</h1>
-            <p id='slogan'>Choose your favorite...</p>
+            <p id='slogan'>Choose your favorite item...</p>
 
         </div>
     );

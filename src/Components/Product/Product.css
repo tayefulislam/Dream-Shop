@@ -1,7 +1,7 @@
 .product{
     
     border-radius: 10px;
-    background-color: bisque;
+    background-color: rgb(243, 171, 171);
     padding: 47px ;
 
 }
@@ -16,7 +16,9 @@
     padding: 10px 20px;
     border: 0;
     border-radius: 10px;
-    background-color: rgb(218, 183, 250);
+    background-color: rgb(255, 255, 255);
     margin-left: 34px;
+    align-items: center;
+    justify-content: center;
 }
 

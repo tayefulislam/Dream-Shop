@@ -37,7 +37,4 @@ const Cart = ({ cart, deleteitem }) => {
 
 
 
-
-
-
 export default Cart;
