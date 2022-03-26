@@ -58,5 +58,17 @@
         "name": "Netgear Desktop Storage",
         "price": 747,
         "picture": "https://www.startech.com.bd/image/cache/catalog/storage/netgear/rn21400/rn21400-228x228.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Sony Alpha 445nm",
+        "price": 500,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/digital-camera/sony/alpha-a6400/alpha-a6400-1-228x228.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Canon Eos Lens Camera",
+        "price": 456,
+        "picture": "https://www.startech.com.bd/image/cache/catalog/camera/dslr-camera/canon/2000d/2000d-228x228.jpg"
     }
 ]
