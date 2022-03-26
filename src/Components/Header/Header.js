@@ -3,7 +3,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div>
+        <div className='header'>
 
             <h1 id='title'>Dream Shop</h1>
             <p id='slogan'>Choose your favorite item...</p>
