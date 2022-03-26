@@ -3,12 +3,8 @@ import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
 
-
-
-
-
-
 const Shop = () => {
+
 
     const [products, setProducts] = useState([])
 
@@ -19,17 +15,10 @@ const Shop = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
 
-
     }, [])
 
 
     const [carts, setCarts] = useState([])
-
-
-    // clear cart
-
-
-
 
 
 
@@ -46,7 +35,7 @@ const Shop = () => {
 
 
             else {
-                alert('Opps! You Can Add More then 4 In Shopping Cart')
+                alert('Opps! You Can Not Add More then 4 In Shopping Cart')
             }
 
 
@@ -128,7 +117,6 @@ const Shop = () => {
                 <div className='cart'>
 
                     <h2>Cart List</h2>
-
 
                     <div>
                         {
