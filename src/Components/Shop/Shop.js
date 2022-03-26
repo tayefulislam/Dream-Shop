@@ -29,13 +29,18 @@ const Shop = () => {
 
     const handleAddToCart = (product) => {
 
-        const newCart = [...carts, product];
-        setCarts(newCart)
+        const checkCart = carts.find(cart => cart.id === product.id);
 
+        if (!checkCart) {
 
+            const newCart = [...carts, product];
+            setCarts(newCart)
 
+        }
 
     }
+
+
 
     return (
         <div className='shop-container'>
