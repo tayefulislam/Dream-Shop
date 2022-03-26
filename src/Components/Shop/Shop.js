@@ -26,6 +26,12 @@ const Shop = () => {
     const [carts, setCarts] = useState([])
 
 
+    // clear cart
+
+
+
+
+
 
     const handleAddToCart = (product) => {
 
@@ -49,28 +55,55 @@ const Shop = () => {
 
     }
 
-
     // get random product
-    const randomfield = document.getElementById('random-product');
+
+    const [randomCart, setRandomCart] = useState([])
+
+
+
+
 
     const randomProduct = () => {
 
-        if (carts.length !== 0) {
-            const randomNum = (max) => Math.floor(Math.random() * max)
+        const randomNum = () => Math.floor(Math.random() * carts.length);
 
-            randomfield.innerText = carts[randomNum(carts.length)].name
+        if (carts.length !== 0) {
+
+            setRandomCart(carts[randomNum()]);
 
         }
 
     }
 
-    //clear cart
+
+
+    // clear the cart
 
     const clearCart = () => {
-        randomfield.innerText = '';
+        setRandomCart([])
         setCarts([])
     }
 
+
+
+
+    // delete a item
+
+    const deleteitem = (product) => {
+
+
+        console.log(product)
+
+        const newDeleteCart = carts.filter(cart => cart.id !== product.id);
+
+        setCarts(newDeleteCart)
+
+
+    }
+
+
+
+    const { name, picture } = randomCart
 
 
     return (
@@ -95,14 +128,22 @@ const Shop = () => {
                 < h1>Choose Product</h1>
 
 
-                {
-                    carts.map(cart => <Cart key={cart.id} cart={cart}></Cart>)
-                }
+                <div>
+                    {
+                        carts.map(cart => <Cart key={cart.id}
+                            cart={cart}
+                            deleteitem={deleteitem}
+                        ></Cart>)
+                    }
+                </div>
 
-                <p id='random-product'></p>
+                <div className='random-product'>
+                    <img src={picture} alt="" />
+                    <p> {name}</p>
+                </div>
 
-                <button onClick={randomProduct}>Raddom One</button>
-                <button onClick={() => clearCart()}>Clear</button>
+                <button onClick={randomProduct}>Surprise Product</button>
+                <button onClick={clearCart}>Clear Shpping Cart</button>
 
             </div>
 

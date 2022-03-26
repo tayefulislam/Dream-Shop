@@ -5,10 +5,10 @@ import React from 'react';
 import './Cart.css'
 
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, deleteitem }) => {
 
 
-    console.log(cart)
+    // console.log(cart)
 
 
 
@@ -22,7 +22,8 @@ const Cart = ({ cart }) => {
 
             <h4>{cart.name}</h4>
 
-            <FontAwesomeIcon icon={faMinusCircle}></FontAwesomeIcon>
+
+            <button onClick={() => deleteitem(cart)}> <FontAwesomeIcon icon={faMinusCircle}></FontAwesomeIcon></button>
 
 
         </div>

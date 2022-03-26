@@ -17,6 +17,10 @@
 
     margin:50px 30px 0;
 }
+.random-product img{
+    width: 80%;
+}
+
 
 @media screen and (max-width:1200px){
 
