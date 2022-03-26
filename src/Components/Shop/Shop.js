@@ -49,13 +49,25 @@ const Shop = () => {
 
     }
 
+
+    // get random product
+    const randomfield = document.getElementById('random-product');
+
+    const randomProduct = () => {
+
+        if (carts.length !== 0) {
+            const randomNum = (max) => Math.floor(Math.random() * max)
+
+            randomfield.innerText = carts[randomNum(carts.length)].name
+
+        }
+
+    }
+
     //clear cart
 
     const clearCart = () => {
-
-        const randomfield = document.getElementById('random-product');
         randomfield.innerText = '';
-
         setCarts([])
     }
 
@@ -75,13 +87,22 @@ const Shop = () => {
                 }
             </div>
 
+
+
             <div className='cart-container'>
 
 
+                < h1>Choose Product</h1>
 
-                <Cart key={carts.id} cart={carts} clearCart={clearCart}></Cart>
 
+                {
+                    carts.map(cart => <Cart key={cart.id} cart={cart}></Cart>)
+                }
 
+                <p id='random-product'></p>
+
+                <button onClick={randomProduct}>Raddom One</button>
+                <button onClick={() => clearCart()}>Clear</button>
 
             </div>
 

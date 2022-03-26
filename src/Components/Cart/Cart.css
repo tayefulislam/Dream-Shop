@@ -1,0 +1,14 @@
+.cart-list{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.cart-list img{
+    width: 20%;
+    height: 15%;
+    border-radius: 50%;
+    margin-right: 5px;
+
+}

@@ -1,59 +1,34 @@
+import { faMinusCircle } from '@fortawesome/free-solid-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import './Cart.css'
 
 
-const Cart = ({ cart, clearCart }) => {
+const Cart = ({ cart }) => {
 
 
-    // get random product
-
-    const randomProduct = () => {
-        const randomNum = (max) => Math.floor(Math.random() * max)
-        const randomfield = document.getElementById('random-product');
-        randomfield.innerText = cart[randomNum(cart.length)].name
-
-    }
-
+    console.log(cart)
 
 
 
 
     return (
 
-        <div>
+        <div className='cart-list'>
+            {/* Product in Cart / Carts List */}
 
-            <div><h1>Choose Product</h1>
+            <img src={cart.picture} alt="" />
 
-                {
-                    cart.map(cart => <h3>{cart.name}</h3>)
-                }
+            <h4>{cart.name}</h4>
 
-                <p id='random-product'></p>
+            <FontAwesomeIcon icon={faMinusCircle}></FontAwesomeIcon>
 
-                <button onClick={randomProduct}>Raddom One</button>
-                <button onClick={() => clearCart()}>Clear</button>
-
-
-
-            </div>
 
         </div>
 
 
-
-
-
-
-
-
     );
-
-
-
-
-
-
-
-
 
 
 };
